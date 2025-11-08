@@ -1,17 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tambah Data</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tambah Data Pengguna</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 320px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Form Tambah Data</h1>
-  <form action="tambah_data.php" method="post">
-    <label>Nama:</label>
-    <input type="text" name="nama" required><br><br>
-    <label>Email:</label>
-    <input type="email" name="email" required><br><br>
+  <form action="tambah_data.php" method="POST">
+    <h2>Tambah Data Pengguna</h2>
+    <input type="text" name="nama" placeholder="Nama" required />
+    <input type="email" name="email" placeholder="Email" required />
     <button type="submit">Simpan</button>
   </form>
 </body>
